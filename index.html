@@ -7,7 +7,7 @@
     
     <!-- OGP Tags -->
     <meta property="og:title" content="BIOTA - KINGDOM OF ONVA 生物図鑑">
-    <meta property="og:description" content="onva（ア゛ンヴァ）に生息する最適化された生命体の記録。コロレン、スイレン、ウォーウルフ、ウォーキャットの観測データ。">
+    <meta property="og:description" content="1928年建国、合理主義の国onva（ア゛ンヴァ）に生息する最適化された生命群。コロレン、スイレン、ウォーウルフ、ウォーキャットの公式観測アーカイブ。">
     <meta property="og:type" content="website">
     <meta property="og:image" content="worwolf.png">
     
@@ -109,7 +109,7 @@
         #detail-modal {
             display: none;
             backdrop-filter: blur(20px);
-            background: rgba(0, 0, 0, 0.95);
+            background: rgba(0, 0, 0, 0.9);
         }
 
         .modal-content {
@@ -126,6 +126,16 @@
             padding: 1rem;
             background: #0d0d0d;
         }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050505;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #222;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -135,7 +145,7 @@
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center gap-4">
                 <span class="text-xl font-bold tracking-[0.3em]">KINGDOM OF ONVA</span>
-                <span class="text-xs text-slate-500 border-l border-slate-700 pl-4 py-1">EST. 1928</span>
+                <span class="text-xs text-slate-500 border-l border-slate-700 pl-4 py-1 uppercase">Est. 1928</span>
             </div>
             <nav class="hidden md:flex gap-10 text-[10px] tracking-[0.2em] uppercase font-bold">
                 <a href="#biota-01" class="hover:text-slate-400 transition">01 ROTATION</a>
@@ -151,8 +161,8 @@
             <div class="byam-style mb-4 text-xs">Biota Optimization Record</div>
             <h1 class="text-6xl md:text-8xl font-bold mb-8 tracking-tighter uppercase">Biota.</h1>
             <p class="text-slate-500 text-sm max-w-xl leading-relaxed">
-                1928年の建国以来、onva（ア゛ンヴァ）は合理主義に基づき環境を最適化してきました。<br>
-                ここに記録されるのは、その最適化された環境に適応、あるいは共生する独自の生命群です。
+                不合理な冗長性を廃した世界。1928年の建国以来、onva（ア゛ンヴァ）は合理主義に基づき環境を最適化してきました。<br>
+                ここに記録されるのは、その最適化された環境に適応し、独自の進化を遂げた生命群のアーカイブです。
             </p>
         </div>
     </section>
@@ -164,47 +174,47 @@
         <section id="biota-01">
             <div class="mb-16">
                 <span class="byam-style text-[10px]">Category 01</span>
-                <h2 class="text-3xl font-bold mt-2 section-title uppercase">Rotation / 回転移動体</h2>
+                <h2 class="text-3xl font-bold mt-2 section-title uppercase font-light">輪生動物門 / Rotation</h2>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <!-- Kororen -->
                 <article class="creature-card group" onclick="openModal('kororen')">
                     <div class="image-container bg-[#050505]">
-                        <img src="kororin.png" alt="コロレン (転錬)" onerror="this.parentElement.innerHTML='<div class=\'text-slate-800 font-bold text-4xl\'>KOROREN</div>'">
+                        <img src="kororin.png" alt="コロレン (転錬)" onerror="this.parentElement.innerHTML='<div class=\'text-slate-800 font-bold text-4xl tracking-widest\'>KOROREN</div>'">
                         <div class="absolute bottom-4 left-4 flex gap-2">
                             <span class="status-tag text-emerald-500 border-emerald-500">Common</span>
                         </div>
                         <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <span class="text-[10px] tracking-widest border border-white px-4 py-2">VIEW DETAILS</span>
+                            <span class="text-[10px] tracking-widest border border-white px-4 py-2">DECODE DATA</span>
                         </div>
                     </div>
                     <div class="p-10">
                         <div class="flex justify-between items-end mb-8">
-                            <h3 class="text-3xl font-bold uppercase">Kororen <span class="text-sm font-normal text-slate-500 ml-2">転錬</span></h3>
+                            <h3 class="text-3xl font-bold uppercase tracking-tight">Kororen <span class="text-sm font-normal text-slate-500 ml-2">転錬</span></h3>
                             <span class="text-[10px] text-slate-600">REF: ONV-RT-01</span>
                         </div>
-                        <p class="text-sm text-slate-400 leading-relaxed mb-6">「回転」という最も効率的な移動手段を選択した小型生物。平坦なonvaの地表において、摩擦を最小限に抑えた高速移動を実現している。</p>
+                        <p class="text-sm text-slate-400 leading-relaxed">ヨーヨー程度のサイズを持つ小型車輪生物。平地の多いonva環境において、「回転」という最も効率的な移動手段を選択した象徴的な存在。</p>
                     </div>
                 </article>
 
                 <!-- Suiren -->
                 <article class="creature-card group" onclick="openModal('suiren')">
                     <div class="image-container bg-[#050505]">
-                        <img src="suiren.png" alt="スイレン (水連)" onerror="this.parentElement.innerHTML='<div class=\'text-slate-800 font-bold text-4xl\'>SUIREN</div>'">
+                        <img src="suiren.png" alt="スイレン (水連)" onerror="this.parentElement.innerHTML='<div class=\'text-slate-800 font-bold text-4xl tracking-widest\'>SUIREN</div>'">
                         <div class="absolute bottom-4 left-4 flex gap-2">
                             <span class="status-tag text-sky-500 border-sky-500">Aquatic</span>
                         </div>
                         <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <span class="text-[10px] tracking-widest border border-white px-4 py-2">VIEW DETAILS</span>
+                            <span class="text-[10px] tracking-widest border border-white px-4 py-2">DECODE DATA</span>
                         </div>
                     </div>
                     <div class="p-10">
                         <div class="flex justify-between items-end mb-8">
-                            <h3 class="text-3xl font-bold uppercase">Suiren <span class="text-sm font-normal text-slate-500 ml-2">水連</span></h3>
+                            <h3 class="text-3xl font-bold uppercase tracking-tight">Suiren <span class="text-sm font-normal text-slate-500 ml-2">水連</span></h3>
                             <span class="text-[10px] text-slate-600">REF: ONV-RT-02</span>
                         </div>
-                        <p class="text-sm text-slate-400 leading-relaxed mb-6">水面および浅瀬を主な活動域とする回転生物。羽根状の器官をプロペラとして機能させ、流体抵抗を推進力へ変換する。</p>
+                        <p class="text-sm text-slate-400 leading-relaxed">「プロペラ型」の進化を遂げた回転生物。水面や空気の流れを利用し、幻想的な軌道を描いて移動する、流体工学の極致のような生命体。</p>
                     </div>
                 </article>
             </div>
@@ -214,26 +224,43 @@
         <section id="biota-02">
             <div class="mb-16">
                 <span class="byam-style text-[10px]">Category 02</span>
-                <h2 class="text-3xl font-bold mt-2 section-title uppercase">Humanoid / 高等知的種族</h2>
+                <h2 class="text-3xl font-bold mt-2 section-title uppercase font-light">高等知的種族 / Humanoid</h2>
             </div>
 
-            <div class="space-y-20">
+            <!-- New Multi-species Interaction Image -->
+            <div class="mb-20">
+                <div class="relative w-full aspect-[21/9] bg-[#0a0a0a] overflow-hidden border border-white/10 group">
+                    <img src="worwolfwithcat.png" alt="ウォーウルフとウォーキャットの交流" class="w-full h-full object-cover grayscale-[0.3] opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700" onerror="this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center text-slate-700 bg-neutral-950 p-8\'><i class=\'fas fa-users text-4xl mb-4\'></i><div class=\'text-xs tracking-[0.3em]\'>INTER-SPECIES SOCIAL RECORD: WORWOLF & WARCAT</div></div>'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-8 left-8">
+                        <span class="byam-style text-[9px] mb-2 block">Social Interaction Log #1042</span>
+                        <h3 class="text-2xl font-bold uppercase tracking-widest">Coexistence.</h3>
+                        <p class="text-xs text-slate-400 mt-2 max-w-md font-light leading-relaxed">
+                            onvaの都市部で見られる日常的な風景。群れを好むウォーウルフと、個人を尊ぶウォーキャット。異なる特性を持つ子供たちの遊びを通じた交流は、次世代の最適化された社会形成に寄与している。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-32">
                 <!-- Worwolf -->
                 <article class="creature-card group grid grid-cols-1 md:grid-cols-5 gap-0 md:gap-12 items-center border-none bg-transparent" onclick="openModal('worwolf')">
                     <div class="md:col-span-3 space-y-8 p-6 md:p-0">
                         <div>
                             <span class="text-xs text-slate-500 block mb-2 uppercase tracking-widest">Species 01</span>
-                            <h3 class="text-5xl font-bold uppercase">Worwolf</h3>
+                            <h3 class="text-5xl font-bold uppercase tracking-tighter">Worwolf</h3>
                         </div>
-                        <p class="text-slate-400 leading-relaxed">人間に極めて近い構造を持つが、狼の特性を保持する。社会性が高く、onvaの最適化された社会システムにも積極的に適応している。</p>
-                        <div class="bg-white/5 p-4 border border-white/10 text-xs text-slate-400 group-hover:border-white/30 transition-colors">
-                            Click to view full behavioral record and infection data.
+                        <p class="text-slate-400 leading-relaxed">
+                            人間に極めて近い構造を持ちながら、狼の耳と尻尾、そして高い感覚能力を保持する独立した知的種族。社会性が高く、onvaの最適化された都市システムにも深く根付いている。
+                        </p>
+                        <div class="bg-white/5 p-4 border border-white/10 text-xs text-slate-400 group-hover:border-white/30 transition-colors uppercase tracking-widest">
+                            Decode: Infection Data & Social Structure
                         </div>
                     </div>
                     <div class="md:col-span-2">
-                        <div class="image-container h-[400px] border-t border-l border-r border-white/10">
+                        <div class="image-container h-[400px] border border-white/10">
                             <img src="worwolf.png" alt="ウォーウルフ" onerror="this.style.opacity='0.2'">
-                            <div class="absolute top-4 right-4 text-[8px] bg-white text-black px-2 py-1 font-bold">CERTIFIED DATA</div>
+                            <div class="absolute top-4 right-4 text-[8px] bg-white text-black px-2 py-1 font-bold">CERTIFIED</div>
                         </div>
                     </div>
                 </article>
@@ -243,19 +270,21 @@
                     <div class="md:col-span-2">
                         <div class="image-container h-[400px] border border-dashed border-slate-700">
                             <div class="no-photo-overlay">
-                                <i class="fas fa-camera-slash text-3xl mb-4 text-slate-800"></i>
-                                <div class="text-[9px] text-slate-700 uppercase tracking-widest">Observation Failed</div>
+                                <i class="fas fa-eye-slash text-3xl mb-4 text-slate-800"></i>
+                                <div class="text-[9px] text-slate-700 uppercase tracking-[0.4em]">Visual Record Blocked</div>
                             </div>
                         </div>
                     </div>
                     <div class="md:col-span-3 space-y-8 p-6 md:p-0">
                         <div>
                             <span class="text-xs text-slate-500 block mb-2 uppercase tracking-widest">Species 02</span>
-                            <h3 class="text-5xl font-bold uppercase">Warcat</h3>
+                            <h3 class="text-5xl font-bold uppercase tracking-tighter">Warcat</h3>
                         </div>
-                        <p class="text-slate-400 leading-relaxed">猫の特性を持つ亜人種。極めて高い警戒心と隠密性能を持ち、人間の視覚センサーによる直接的な「撮影」を回避する習性がある。</p>
-                        <div class="bg-white/5 p-4 border border-white/10 text-xs text-slate-400 group-hover:border-white/30 transition-colors">
-                            Click to view intercepted sensory logs and habitat analysis.
+                        <p class="text-slate-400 leading-relaxed">
+                            猫の特性を持つ高等知的種族。単独行動を好み、人間の視覚センサーや「撮影」という行為を情報的拘束として忌避する。その隠密性はonvaの高度な監視網すら潜り抜ける。
+                        </p>
+                        <div class="bg-white/5 p-4 border border-white/10 text-xs text-slate-400 group-hover:border-white/30 transition-colors uppercase tracking-widest">
+                            Decode: Sensory Logs & Stealth Performance
                         </div>
                     </div>
                 </article>
@@ -266,47 +295,47 @@
 
     <!-- Modal Structure -->
     <div id="detail-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-12">
-        <div class="absolute inset-0 bg-black/80" onclick="closeModal()"></div>
-        <div class="modal-content relative bg-[#0a0a0a] border border-white/20 w-full max-w-5xl max-h-[90vh] overflow-y-auto flex flex-col md:flex-row">
+        <div class="absolute inset-0 bg-black/95" onclick="closeModal()"></div>
+        <div class="modal-content relative bg-[#0a0a0a] border border-white/20 w-full max-w-6xl max-h-[90vh] overflow-y-auto flex flex-col lg:flex-row">
             <!-- Close Button -->
-            <button onclick="closeModal()" class="absolute top-6 right-6 z-10 text-slate-500 hover:text-white text-2xl">
+            <button onclick="closeModal()" class="absolute top-6 right-6 z-10 text-slate-500 hover:text-white text-2xl transition">
                 <i class="fas fa-times"></i>
             </button>
             
             <!-- Modal Media -->
-            <div id="modal-media" class="w-full md:w-1/2 bg-black flex items-center justify-center p-8 border-b md:border-b-0 md:border-r border-white/10 min-h-[300px]">
-                <!-- Dynamic Image/Placeholder -->
+            <div id="modal-media" class="w-full lg:w-2/5 bg-black flex items-center justify-center p-8 border-b lg:border-b-0 lg:border-r border-white/10 min-h-[300px]">
+                <!-- Dynamic Content -->
             </div>
             
             <!-- Modal Data -->
-            <div class="w-full md:w-1/2 p-8 md:p-12 space-y-10">
-                <div id="modal-header">
-                    <span id="modal-ref" class="byam-style text-[9px]"></span>
-                    <h2 id="modal-title" class="text-5xl font-bold uppercase mt-2"></h2>
-                    <p id="modal-subtitle" class="text-slate-500 text-sm mt-2"></p>
+            <div class="w-full lg:w-3/5 p-8 md:p-16 overflow-y-auto">
+                <div id="modal-header" class="mb-12">
+                    <span id="modal-ref" class="byam-style text-[9px] block mb-2"></span>
+                    <h2 id="modal-title" class="text-5xl font-bold uppercase tracking-tighter"></h2>
+                    <p id="modal-subtitle" class="text-slate-400 text-sm mt-4 font-light"></p>
                 </div>
 
-                <div id="modal-body" class="space-y-8 text-sm text-slate-400 leading-relaxed">
-                    <!-- Dynamic Text Content -->
+                <div id="modal-body" class="space-y-12 text-sm text-slate-400 leading-relaxed">
+                    <!-- Dynamic Content -->
                 </div>
 
-                <div id="modal-stats" class="grid grid-cols-2 gap-4">
-                    <!-- Dynamic Stats Grid -->
+                <div id="modal-stats" class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-12">
+                    <!-- Dynamic Stats -->
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="mt-48 py-20 px-6">
+    <footer class="mt-48 py-20 px-6 border-t border-white/5">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="text-[10px] tracking-widest text-slate-600 uppercase">
-                &copy; 1928-2045 KINGDOM OF ONVA. ARCHIVE DIVISION.
+            <div class="text-[10px] tracking-widest text-slate-600 uppercase font-bold">
+                &copy; 1928-2045 KINGDOM OF ONVA. OPTIMIZED BIOTA ARCHIVE.
             </div>
-            <div class="flex gap-6 text-slate-600">
-                <i class="fab fa-github"></i>
-                <i class="fas fa-database"></i>
-                <i class="fas fa-network-wired"></i>
+            <div class="flex gap-8 text-slate-600 text-xs tracking-widest uppercase">
+                <a href="#" class="hover:text-white transition">Privacy</a>
+                <a href="#" class="hover:text-white transition">Terms</a>
+                <a href="#" class="hover:text-white transition">Contact</a>
             </div>
         </div>
     </footer>
@@ -315,82 +344,112 @@
         const creatureData = {
             'kororen': {
                 title: 'Kororen',
-                ref: 'REF: ONV-RT-01',
-                subtitle: '転錬 - Small Wheel Organism',
-                img: 'IMG_2771.png',
+                ref: 'REF: ONV-RT-01 (転錬)',
+                subtitle: '小型車輪生物 - Wheel-based organism optimized for plains.',
+                img: 'kororin.png',
                 body: `
-                    <p>onvaの平地環境に最も適応した進化の形態。外殻は硬質化しており、内部の筋肉繊維の収縮により高速回転を生み出す。通常、時速40km程度での巡航が可能。</p>
-                    <p class="mt-4 border-l-2 border-white/20 pl-4 py-2 italic text-xs uppercase tracking-tighter">
-                        Warning: 走行中に進路を塞ぐと、衝突により怪我をする恐れがあります。
-                    </p>
-                    <div class="mt-8">
-                        <h4 class="text-white text-xs font-bold mb-4 uppercase tracking-widest">Behavioral Patterns</h4>
-                        <ul class="space-y-2 list-disc list-inside opacity-80">
-                            <li>傾斜地における自動加速反応</li>
-                            <li>夜間の集団走行（同期回転現象）</li>
-                            <li>空き缶などの円筒形オブジェクトへの模倣興味</li>
-                        </ul>
-                    </div>
+                    <section>
+                        <h4 class="text-white text-xs font-bold mb-4 uppercase tracking-widest">概要</h4>
+                        <p>ヨーヨー程度のサイズを持つ車輪型生物。平地の多いonvaの環境に完璧に適応し、高速かつ静かに移動する。一見すると人工物のように見えるが、明確な生存本能を持つ生命体である。</p>
+                    </section>
+                    <section>
+                        <h4 class="text-white text-xs font-bold mb-4 uppercase tracking-widest">移動方式・構造</h4>
+                        <p>「回転移動」に特化した進化。通常生物の脚移動よりもエネルギー効率が高く、長距離移動に優れる。外側の硬い輪状の殻のみが回転し、内側の本体は固定されている「外輪型」や、中心部がわずかに浮いている「浮遊軸型」など、複数の構造案が研究されている。</p>
+                    </section>
+                    <section>
+                        <h4 class="text-white text-xs font-bold mb-4 uppercase tracking-widest">行動・習性</h4>
+                        <p>基本的には野生寄りだが、坂を見ると加速する習性がある。夜間に活発化し、群れで同じ方向へ転がることが多い。振動や音に非常に敏感で、驚くと急加速して逃走する。</p>
+                    </section>
+                    <section class="bg-white/5 p-6 border-l-2 border-white">
+                        <h4 class="text-white text-[10px] font-bold mb-3 uppercase tracking-widest">日常と共生</h4>
+                        <p class="text-xs italic mb-2">「あ、コロレンの群れだ」「夜はコロが多いから気をつけて」</p>
+                        <p class="text-xs">onvaではありふれた存在であり、子供たちの遊び相手でもある。専用の坂道を作って速さを競わせたり、空き缶でコースを作って誘導したりする光景が見られる。稀に、朝起きると枕元で止まっている個体もいる。</p>
+                    </section>
                 `,
                 stats: [
-                    { label: 'Mobility', value: '40 km/h' },
-                    { label: 'Diet', value: 'Minerals' },
-                    { label: 'Rarity', value: 'Common' },
-                    { label: 'Risk', value: 'Low' }
+                    { label: 'Mobility', value: 'High' },
+                    { label: 'Risk', value: 'Low' },
+                    { label: 'Size', value: 'Small' },
+                    { label: 'Type', value: 'Wild' }
                 ]
             },
             'suiren': {
                 title: 'Suiren',
-                ref: 'REF: ONV-RT-02',
-                subtitle: '水連 - Propeller Aquatic Biota',
+                ref: 'REF: ONV-RT-02 (水連)',
+                subtitle: 'プロペラ型回転生物 - Propeller-driven aquatic biota.',
                 img: 'suiren.png',
                 body: `
-                    <p>湖沼や雨季の平原に現れる回転生物。全身を回転させることで水流を起こし、小型昆虫を捕食する。その回転構造は極めて洗練されており、流体力学的に完璧な形状に近いとされる。</p>
-                    <p class="mt-4 border-l-2 border-white/20 pl-4 py-2 italic text-xs uppercase tracking-tighter text-sky-400">
-                        Observation: 雨の日には回転速度が増し、幻想的な水しぶきを上げる。
-                    </p>
+                    <section>
+                        <h4 class="text-white text-xs font-bold mb-4 uppercase tracking-widest">概要</h4>
+                        <p>輪生動物門に属する、プロペラ型の進化を遂げた生物。見た目は生物と機械の中間のような独特な構造を持ち、水色や白色系の半透明な膜を持つ個体が多い。</p>
+                    </section>
+                    <section>
+                        <h4 class="text-white text-xs font-bold mb-4 uppercase tracking-widest">移動と生息地</h4>
+                        <p>体の一部をプロペラのように高速回転させ、水流や空気流を発生させて推進する。水面を滑る、浅瀬を進む、さらには風に乗って滑空する姿も確認される。湖、湿地、雨季の平原など、水辺を主な生息域とする。</p>
+                    </section>
+                    <section>
+                        <h4 class="text-white text-xs font-bold mb-4 uppercase tracking-widest">生態・光学的特徴</h4>
+                        <p>非常に温厚で、回転時に発生する流れで微生物や有機物を集めて捕食する。夜間、水面近くで群れが発光する姿は極めて幻想的であり、onvaの観光資源や観賞対象としても高い価値を持つ。</p>
+                    </section>
                 `,
                 stats: [
-                    { label: 'Habitat', value: 'Wetlands' },
-                    { label: 'Energy', value: 'Photosynthetic' },
-                    { label: 'Luminance', value: 'Low-Medium' },
-                    { label: 'Season', value: 'Rainy' }
+                    { label: 'Habitat', value: 'Water' },
+                    { label: 'Energy', value: 'Organic' },
+                    { label: 'Aesthetics', value: 'Tier 1' },
+                    { label: 'Activity', value: 'Night' }
                 ]
             },
             'worwolf': {
                 title: 'Worwolf',
                 ref: 'REF: ONV-HM-01',
-                subtitle: 'ウォーウルフ - Specialized Humanoid',
-                img: 'IMG_2772.png',
+                subtitle: '狼耳の知的生物 - Specialized Humanoid with Lupine traits.',
+                img: 'worwolf.png',
                 body: `
-                    <p>人間とほぼ同等の知性を有する知的種族。その「狼」としての身体的特徴は、単なる遺伝子の名残りではなく、感覚能力の拡張として機能している。彼らの社会は「合理的な群れ」として定義され、個体間の高い協調性が特徴である。</p>
-                    <p class="mt-4 p-4 bg-white/5 border border-white/10 text-xs">
-                        <strong class="text-white">INFECTION LOG:</strong> 感染性は限定的だが、生存本能の強化を目的として、人間側が希望してウォーウルフ化を選択する社会的事例も記録されている。
-                    </p>
+                    <section>
+                        <h4 class="text-white text-xs font-bold mb-4 uppercase tracking-widest">概要</h4>
+                        <p>人間とほぼ同一の身体構造を持ちながら、狼の耳と尻尾を有する種族。銀髪系が多く、耳や尻尾は感情表現と密接にリンクしている。変身怪物としての「ワーウルフ」とは異なる独立した知的生命体である。</p>
+                    </section>
+                    <section>
+                        <h4 class="text-white text-xs font-bold mb-4 uppercase tracking-widest">社会と人間関係</h4>
+                        <p>人間社会に深く適応しており、同じ学校に通い、同じ職場で働く姿はonvaでは日常的な風景。群れ文化を好む個体から単独生活を選ぶ者まで多様。野生の鋭い感覚と、人間と同等の理性を併せ持つ。</p>
+                    </section>
+                    <section class="bg-white/5 p-6 border-l-2 border-white">
+                        <h4 class="text-white text-[10px] font-bold mb-3 uppercase tracking-widest">Infection & Inheritance</h4>
+                        <p class="text-xs">唾液や血液を通じた「感染」により人間がウォーウルフ化する場合がある。これは単なる事故ではなく、命を救うための「医療的延命」や、大切な人を守るための「愛情行為」として、特定の文化圏で意図的に行われることがある。</p>
+                    </section>
                 `,
                 stats: [
-                    { label: 'Intelligence', value: 'Level 5 (Human)' },
+                    { label: 'Intel', value: 'High' },
                     { label: 'Society', value: 'Communal' },
-                    { label: 'Sensory', value: 'Enhanced' },
-                    { label: 'Lifespan', value: '80-100 yrs' }
+                    { label: 'Sensory', value: 'Extrem' },
+                    { label: 'Trait', value: 'Silver' }
                 ]
             },
             'warcat': {
                 title: 'Warcat',
                 ref: 'REF: ONV-HM-02',
-                subtitle: 'ウォーキャット - Elusive Humanoid',
+                subtitle: '猫耳の知的生物 - High-mobility Humanoid with Feline agility.',
                 img: null,
                 body: `
-                    <p>観測不能な存在。彼らは人間社会の隙間に「点」として存在し、決して「線」として記録されることを好まない。彼らの移動経路は三次元的な最適化がなされており、既存の歩道ではなく屋上や配管を利用する。</p>
-                    <p class="mt-4 text-xs italic text-slate-500">
-                        「写真を撮る」という行為は、彼らにとって情報的な拘束を意味する。カメラを向けた瞬間に気配は消える。
-                    </p>
+                    <section>
+                        <h4 class="text-white text-xs font-bold mb-4 uppercase tracking-widest">概要</h4>
+                        <p>猫の耳と尻尾を持つ知的種族。ウォーウルフに比べて単独行動を好み、個人の空間と距離感を極めて重要視する。気分屋に見えることもあるが、その観察眼は非常に鋭い。</p>
+                    </section>
+                    <section>
+                        <h4 class="text-white text-xs font-bold mb-4 uppercase tracking-widest">身体能力と移動</h4>
+                        <p>極めて高い平衡感覚と身軽さを持ち、屋根、手すり、電線、配管、高架などの三次元的な空間を移動経路として最適化している。音を立てずに移動し、高所からの落下耐性も高い。</p>
+                    </section>
+                    <section class="border border-dashed border-white/20 p-6">
+                        <h4 class="text-white text-[10px] font-bold mb-3 uppercase tracking-widest">The "Anti-Observation" Phenomenon</h4>
+                        <p class="text-xs italic text-slate-500">「写真を撮らせてくれない個体が多い」</p>
+                        <p class="text-xs mt-2">これは彼らにとって、他者の記録媒体に「固定」されることが、自由な流動性と情報のプライバシーを損なう不合理な行為だからである。カメラを向けた瞬間に気配を消す技術は、種族固有の生存戦略に近い。</p>
+                    </section>
                 `,
                 stats: [
-                    { label: 'Stealth', value: 'Tier 1' },
-                    { label: 'Agility', value: 'Superior' },
-                    { label: 'Population', value: 'Unknown' },
-                    { label: 'Preference', value: 'Solitude' }
+                    { label: 'Stealth', value: 'S Class' },
+                    { label: 'Agility', value: 'Max' },
+                    { label: 'Social', value: 'Solitary' },
+                    { label: 'Sight', value: 'Night' }
                 ]
             }
         };
@@ -408,12 +467,13 @@
             
             // Set Media
             if (data.img) {
-                mediaContainer.innerHTML = `<img src="${data.img}" class="max-w-full max-h-[400px] object-contain grayscale-[0.5]" alt="${data.title}">`;
+                mediaContainer.innerHTML = `<img src="${data.img}" class="max-w-full max-h-[500px] object-contain grayscale-[0.2] contrast-[1.1]" alt="${data.title}">`;
             } else {
                 mediaContainer.innerHTML = `
-                    <div class="no-photo-overlay text-slate-700">
-                        <i class="fas fa-eye-slash text-4xl mb-4"></i>
-                        <div class="text-[10px] tracking-widest font-bold">DATA CORRUPTED / HIDDEN</div>
+                    <div class="no-photo-overlay text-slate-600 border border-white/10">
+                        <i class="fas fa-ghost text-4xl mb-4"></i>
+                        <div class="text-[10px] tracking-[0.4em] font-bold">NON-RECORDABLE SUBJECT</div>
+                        <div class="text-[8px] mt-2 opacity-50 uppercase">Digital censorship applied by subject</div>
                     </div>
                 `;
             }
@@ -422,13 +482,13 @@
             const statsGrid = document.getElementById('modal-stats');
             statsGrid.innerHTML = data.stats.map(s => `
                 <div class="data-grid-item">
-                    <span class="block text-[8px] text-slate-600 uppercase mb-1">${s.label}</span>
-                    <span class="text-white text-xs">${s.value}</span>
+                    <span class="block text-[8px] text-slate-600 uppercase mb-1 tracking-tighter">${s.label}</span>
+                    <span class="text-white text-xs font-bold">${s.value}</span>
                 </div>
             `).join('');
 
             modal.style.display = 'flex';
-            document.body.style.overflow = 'hidden'; // Prevent scroll
+            document.body.style.overflow = 'hidden';
         }
 
         function closeModal() {
@@ -436,7 +496,6 @@
             document.body.style.overflow = 'auto';
         }
 
-        // Close on ESC key
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') closeModal();
         });
