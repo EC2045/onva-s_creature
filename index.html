@@ -150,6 +150,7 @@
             <nav class="hidden md:flex gap-10 text-[10px] tracking-[0.2em] uppercase font-bold">
                 <a href="#biota-01" class="hover:text-slate-400 transition">01 ROTATION</a>
                 <a href="#biota-02" class="hover:text-slate-400 transition">02 HUMANOID</a>
+                <a href="#biota-03" class="hover:text-slate-400 transition">03 AMORPHOUS</a>
                 <a href="https://ec2045.github.io/onva/" target="_blank" class="bg-white text-black px-4 py-2 hover:bg-slate-200 transition">Main Site</a>
             </nav>
         </div>
@@ -286,6 +287,39 @@
                         <div class="bg-white/5 p-4 border border-white/10 text-xs text-slate-400 group-hover:border-white/30 transition-colors uppercase tracking-widest">
                             Decode: Sensory Logs & Stealth Performance
                         </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 03 AMORPHOUS -->
+        <section id="biota-03">
+            <div class="mb-16">
+                <span class="byam-style text-[10px]">Category 03</span>
+                <h2 class="text-3xl font-bold mt-2 section-title uppercase font-light">不定形軟体生物 / Amorphous</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Nerun -->
+                <article class="creature-card group" onclick="openModal('nerun')">
+                    <div class="image-container bg-[#050505]">
+                        <div class="no-photo-overlay">
+                            <i class="fas fa-shapes text-3xl mb-4 text-slate-800"></i>
+                            <div class="text-[9px] text-slate-700 uppercase tracking-[0.4em]">Unstable Form</div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 flex gap-2">
+                            <span class="status-tag text-rose-800 border-rose-800">Clay</span>
+                        </div>
+                        <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="text-[10px] tracking-widest border border-white px-4 py-2">DECODE DATA</span>
+                        </div>
+                    </div>
+                    <div class="p-10">
+                        <div class="flex justify-between items-end mb-8">
+                            <h3 class="text-3xl font-bold uppercase tracking-tight">Nerun <span class="text-sm font-normal text-slate-500 ml-2">ネルン</span></h3>
+                            <span class="text-[10px] text-slate-600">REF: ONV-AM-01</span>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed">赤色粘土と灰色粘土が混ざり合ったような質感を持つ不定形の生物。表面は乾燥した陶土に見えるが内部は柔らかく、制作途中の作品に擬態する。</p>
                     </div>
                 </article>
             </div>
@@ -456,6 +490,40 @@
                     { label: 'Social', value: 'Solitary' },
                     { label: 'Sight', value: 'Night' }
                 ]
+            },
+            'nerun': {
+                title: 'Nerun',
+                ref: 'REF: ONV-AM-01 (ネルン)',
+                subtitle: '不定形軟体生物 - Amorphous clay-like organism.',
+                img: null,
+                body: `
+                    <section>
+                        <h4 class="text-white text-xs font-bold mb-4 uppercase tracking-widest">概要</h4>
+                        <p>赤色粘土と灰色粘土が混ざり合ったような質感を持つ、不定形の生物。表面は乾燥した陶土のように見えるが、内部は柔らかく、ゆっくりと形状を変化させ続けている。明確な顔や眼球を持たず、体表からは木工用ボンドや白絵の具に似た白色の粘性液体が垂れている。</p>
+                    </section>
+                    <section>
+                        <h4 class="text-white text-xs font-bold mb-4 uppercase tracking-widest">生態と習性</h4>
+                        <p>夜間に非常に緩慢な移動を行う。日中は作業台や壁際で静止しており、完全に「制作途中の粘土作品」に擬態しているため、一般人は生物と認識できない。振動に反応して微妙に形を変え、放置されたアトリエや湿度の高い地下室、廃棄された粘土工房などを好む。</p>
+                    </section>
+                    <section class="bg-white/5 p-6 border-l-2 border-white">
+                        <h4 class="text-white text-[10px] font-bold mb-3 uppercase tracking-widest">特異な能力</h4>
+                        <ul class="text-xs space-y-2 list-disc list-inside">
+                            <li><strong>修復能力:</strong> 乾燥や破損が起きても、白色液体で再接着し修復できる。完全に分裂した場合でも、断片が再び集合することがある。</li>
+                            <li><strong>色素吸収:</strong> 周囲の絵具や顔料を吸収し、表面色がゆっくり変化する。青や緑の顔料を吸収した個体は不自然な模様を形成する。</li>
+                        </ul>
+                    </section>
+                    <section class="border border-dashed border-white/20 p-6">
+                        <h4 class="text-white text-[10px] font-bold mb-3 uppercase tracking-widest">作家Rとの関係とONVAでの扱い</h4>
+                        <p class="text-xs italic text-slate-500">「ネルンが近くに現れると良い作品が生まれる」</p>
+                        <p class="text-xs mt-2">ONVAでは「作品と生物の中間存在」として扱われる。作家Rによって特に好まれており、Rの制作現場に頻繁に出現する。芸術家や造形師の間では意図的にアトリエへ住み着かせる者もいる。一方で、作業台の上で少しずつ位置が変わるため不気味に思われることも多い。</p>
+                    </section>
+                `,
+                stats: [
+                    { label: 'Form', value: 'Amorphous' },
+                    { label: 'Activity', value: 'Slow/Night' },
+                    { label: 'Mimicry', value: 'Clay Art' },
+                    { label: 'Habitat', value: 'Atelier' }
+                ]
             }
         };
 
@@ -475,10 +543,10 @@
                 mediaContainer.innerHTML = `<img src="${data.img}" class="max-w-full max-h-[500px] object-contain grayscale-[0.2] contrast-[1.1]" alt="${data.title}">`;
             } else {
                 mediaContainer.innerHTML = `
-                    <div class="no-photo-overlay text-slate-600 border border-white/10">
-                        <i class="fas fa-ghost text-4xl mb-4"></i>
-                        <div class="text-[10px] tracking-[0.4em] font-bold">NON-RECORDABLE SUBJECT</div>
-                        <div class="text-[8px] mt-2 opacity-50 uppercase">Digital censorship applied by subject</div>
+                    <div class="no-photo-overlay text-slate-600 border border-white/10 w-full h-full min-h-[300px]">
+                        <i class="fas ${id === 'nerun' ? 'fa-shapes' : 'fa-ghost'} text-4xl mb-4"></i>
+                        <div class="text-[10px] tracking-[0.4em] font-bold">${id === 'nerun' ? 'UNSTABLE FORM' : 'NON-RECORDABLE SUBJECT'}</div>
+                        <div class="text-[8px] mt-2 opacity-50 uppercase">${id === 'nerun' ? 'Mimicry applied by subject' : 'Digital censorship applied by subject'}</div>
                     </div>
                 `;
             }
